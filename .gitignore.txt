@@ -1,0 +1,2 @@
+﻿./server/node_modules
+./client/crud/node_modules
