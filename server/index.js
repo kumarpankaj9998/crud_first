@@ -7,11 +7,15 @@ app.use(express.json())
 
 mongoose.connect("mongodb+srv://userName:7891216649a@crud.8byar.mongodb.net/student?retryWrites=true&w=majority",{useNewUrlParser: true});
 
-app.get('/',async(req,res)=>{
-    const student =new studentModel({studentName:"pankaj",studentRoll:3})
+app.get("/",async(req,res)=>{
+    const student1 =new studentModel({studentName:"pankaj",studentRoll:3})
+    const student2= new studentModel({studentName:"varun",studentRoll:4})
+
     try{
-        const res = await student.save();
-        console.log("Data entered", res)
+        const res1 = await student1.save();
+        const res2 = await student2.save();
+        console.log("Data entered", res1)
+        console.log("Data entered", res2)
         }catch(e){console.log(e);};
 });
 

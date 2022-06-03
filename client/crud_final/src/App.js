@@ -1,24 +1,18 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>FIRST TIME PLAYING WITH THIS MODAL</h1>
+       <label>Name of the student</label> 
+       <input type="text" className="sizer"/>
+       <label>Roll no:</label>
+       <input type="number" className="sizer"/>
+       <button type="submit"  className="sizer"  >SUBMIT </button>
     </div>
+    
+
   );
 }
 
